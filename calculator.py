@@ -1,10 +1,5 @@
-"""
-Calculator Module - Task 3 Starter File
-Implement the functions below on the 'feature/calculator' branch.
-"""
-
 def add(a, b):
-    return a + b
+    pass
 
 def multiply(a, b):
-    return a * b
+    pass
