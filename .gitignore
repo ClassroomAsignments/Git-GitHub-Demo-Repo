@@ -1,4 +1,11 @@
-# TODO: Add patterns to ignore:
-# 1. All log files (*.log)
-# 2. Entire temp directory (temp/)
-# 3. Entire lectures directory (lectures/)
+# Ignore log files
+*.log
+
+# Ignore temporary and lecture files
+temp/
+lectures/
+
+# Python cache & build artifacts
+__pycache__/
+*.pyc
+
