@@ -3,6 +3,13 @@
 # 2. Entire temp directory (temp/)
 # 3. Entire lectures directory (lectures/)
 
+*.log
+temp/
+lectures/
+__pycache__/
+*.pyc
+.vscode/
+
 # Python bytecode & cache files
 __pycache__/
 *.pyc
