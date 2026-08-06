@@ -1,7 +1,7 @@
 name: Autograder Runner
 
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened]
 
 permissions:
@@ -11,13 +11,8 @@ jobs:
   run-autograder:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout PR code (head repo)
+      - name: Checkout PR code
         uses: actions/checkout@v4
-        with:
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.event.pull_request.head.ref }}
-          fetch-depth: 0
-          allow-unsafe-pr-checkout: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,3 +29,4 @@ jobs:
         with:
           name: autograder_output
           path: autograder_output.txt
+
