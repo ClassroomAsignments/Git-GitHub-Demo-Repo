@@ -70,7 +70,7 @@ graph TD
 
 ### 🌿 Single Remote Branch Invariant & Tracked File Manifest
 * **Single Remote Branch (`main`)**: The official instructor repository on GitHub MUST contain **only one branch (`main`)**. All temporary development branches MUST be deleted from GitHub after merging so students fork a completely clean repository.
-* **Student-Facing Tracked File Manifest**: The repository on GitHub MUST contain ONLY the 15 student-relevant starter files:
+* **Student-Facing Tracked File Manifest**: The repository on GitHub MUST contain ONLY the 12 student-relevant starter files:
   1. `.github/workflows/autograder-runner.yml`
   2. `.github/workflows/post-grades.yml`
   3. `.gitignore`
@@ -78,14 +78,11 @@ graph TD
   5. `GITHUB_REFLECTION.md`
   6. `README.md`
   7. `RUBRIC.md`
-  8. `app.py`
-  9. `autograder.py`
-  10. `calculator.py`
-  11. `notes.txt`
-  12. `src/app.py`
-  13. `src/calculator.py`
-  14. `src/notes.txt`
-  15. `student_info.json`
+  8. `autograder.py`
+  9. `src/app.py`
+  10. `src/calculator.py`
+  11. `src/notes.txt`
+  12. `student_info.json`
 
 ### 🧪 Autograder Contract ([`autograder.py`](https://github.com/ClassroomAsignments/Git_GitHub-Practice-Asgnmt/blob/main/autograder.py))
 * **Zero Dependencies**: [`autograder.py`](https://github.com/ClassroomAsignments/Git_GitHub-Practice-Asgnmt/blob/main/autograder.py) MUST run in standard Python 3.x without third-party library dependencies so students can run it locally without installation friction.
